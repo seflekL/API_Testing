@@ -1,6 +1,7 @@
+package tests;
+
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.hamcrest.Matchers;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
@@ -12,7 +13,7 @@ public class C09_Get_BodyTekrarlardanKurtulma {
     public void test01() {
 
         /*
-     C09_Get_BodyTekrarlardanKurtulma
+     tests.C09_Get_BodyTekrarlardanKurtulma
      https://restful-booker.herokuapp.com/booking/10 url’ine bir
       GET request gonderdigimizde
      donen Response’un,

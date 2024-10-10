@@ -1,13 +1,11 @@
+package tests;
+
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.hamcrest.Matcher;
 import org.hamcrest.Matchers;
 import org.junit.Test;
 
-import java.lang.module.ResolutionException;
-
 import static io.restassured.RestAssured.given;
-import static io.restassured.RestAssured.when;
 
 public class C07_Get_ResponseBodyTesti {
 

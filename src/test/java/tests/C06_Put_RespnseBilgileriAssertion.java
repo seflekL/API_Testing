@@ -1,6 +1,6 @@
+package tests;
+
 import io.restassured.http.ContentType;
-import io.restassured.internal.common.assertion.Assertion;
-import io.restassured.internal.common.assertion.AssertionSupport;
 import io.restassured.response.Response;
 import org.json.JSONObject;
 import org.junit.Test;

@@ -1,19 +1,19 @@
+package tests;
+
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import org.hamcrest.Matchers;
 import org.json.JSONObject;
 import org.junit.Assert;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
 
 public class C13_Get_ExpectedDataOlusturma {
 
     @Test
     public void test01(){
 /*
-C13_Get_ExpectedDataOlusturma
+tests.C13_Get_ExpectedDataOlusturma
 https://jsonplaceholder.typicode.com/posts/22 url'ine bir GET request
 yolladigimizda donen response body’sinin asagida verilen ile ayni oldugunutest ediniz
 Response body :

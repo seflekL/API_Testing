@@ -1,3 +1,5 @@
+package tests;
+
 import org.json.JSONObject;
 import org.junit.Test;
 
@@ -7,7 +9,7 @@ public class C04_JsonObjesiOlusturma {
     public void test01 (){
 
    /*
-   C04_JsonObjesiOlusturma
+   tests.C04_JsonObjesiOlusturma
 Asagidaki JSON Objesini olusturup konsolda
 yazdirin.
 {
