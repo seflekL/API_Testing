@@ -43,12 +43,12 @@ public class C25_Put_TestDataClassKullanimi extends BaseUrlJsonPlaceholder {
 
         specJsonPlaceholder.pathParams("pp1", "posts", "pp2", 70);
 
-        JSONObject requestBody = TestDataJsonPlaceholder.responseJsonBodyOlustur(10, 70, "Ahmet", "Merhaba");
+        JSONObject requestBody = TestDataJsonPlaceholder.JsonBodyOlustur(10, 70, "Ahmet", "Merhaba");
 
         //2-Expeceddata
 
         JSONObject expectedJsonObj = new JSONObject();
-        expectedJsonObj = TestDataJsonPlaceholder.responseJsonBodyOlustur(10, 70, "Ahmet", "Merhaba");
+        expectedJsonObj = TestDataJsonPlaceholder.JsonBodyOlustur(10, 70, "Ahmet", "Merhaba");
 
         //3-Request send/save
 
@@ -63,13 +63,12 @@ public class C25_Put_TestDataClassKullanimi extends BaseUrlJsonPlaceholder {
         //4- Assertions
 
         JsonPath  responseJsonPath= response.jsonPath();
-        //status code 200
+        //Status code 200
         Assert.assertEquals(TestDataJsonPlaceholder.basariliSorguStatusCode,response.statusCode());
         //content Type
         Assert.assertEquals(TestDataJsonPlaceholder.contentType,response.contentType());
         //Conenction header
         Assert.assertEquals(TestDataJsonPlaceholder.headerconnection,response.header("Connection"));
-
         //Body
         Assert.assertEquals(expectedJsonObj.get("id"),responseJsonPath.getInt("id"));
         Assert.assertEquals(expectedJsonObj.get("userId"),responseJsonPath.getInt("userId"));

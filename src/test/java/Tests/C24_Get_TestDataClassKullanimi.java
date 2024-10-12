@@ -38,7 +38,7 @@ unde omnis voluptatem iure quasi maxime voluptas nam"
 
 
         //2-Expeceddata
-        JSONObject expetectedData = TestDataJsonPlaceholder.responseJsonBodyOlustur(4, 40, "enim quo cumque", "ut voluptatum aliquid illo tenetur nemo sequi quo facilis\nipsum rem optio mollitia quas\nvoluptatem eum voluptas qui\nunde omnis voluptatem iure quasi maxime voluptas nam");
+        JSONObject expetectedData = TestDataJsonPlaceholder.JsonBodyOlustur(4, 40, "enim quo cumque", "ut voluptatum aliquid illo tenetur nemo sequi quo facilis\nipsum rem optio mollitia quas\nvoluptatem eum voluptas qui\nunde omnis voluptatem iure quasi maxime voluptas nam");
 
 
 

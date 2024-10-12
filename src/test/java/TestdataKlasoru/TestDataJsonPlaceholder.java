@@ -19,7 +19,7 @@ public class TestDataJsonPlaceholder {
         return expectedData;
     }
 
-    public static JSONObject responseJsonBodyOlustur(int userID, int id, String title, String body) {
+    public static JSONObject JsonBodyOlustur(int userID, int id, String title, String body) {
 
         JSONObject expectedData = new JSONObject();
         expectedData.put("userId", userID);
