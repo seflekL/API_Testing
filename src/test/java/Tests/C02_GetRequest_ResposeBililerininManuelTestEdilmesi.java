@@ -1,4 +1,4 @@
-package tests;
+package Tests;
 
 import io.restassured.response.Response;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package tests;
+package Tests;
 
 import baseUrl.BaseUrlHeroKuapp;
 import io.restassured.response.Response;
