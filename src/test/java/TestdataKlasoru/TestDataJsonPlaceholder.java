@@ -2,6 +2,9 @@ package TestdataKlasoru;
 
 import org.json.JSONObject;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class TestDataJsonPlaceholder {
 
     public static int basariliSorguStatusCode = 200;
@@ -30,4 +33,16 @@ public class TestDataJsonPlaceholder {
 
 
     }
+    //Maplerde hem string hem int kullanmak icin object kullaniyoruz
+    public static Map<String, Object> bodyolusturMap(){
+
+        Map<String,Object>bodyMap=new HashMap<>();
+        bodyMap.put("title","Ahmet");
+        bodyMap.put("body","Merhaba");
+        bodyMap.put("userId",10.0);
+        bodyMap.put("id",70.0);
+
+        return bodyMap;
+    }
 }
+
