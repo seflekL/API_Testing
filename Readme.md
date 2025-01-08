@@ -1,62 +1,70 @@
-# API Testing Practice
+# 🌐 API Testing Practice
 
-Bu proje, çeşitli HTTP istek türleri ve JSON ile çalışarak API testlerini öğrenmek ve uygulamak için oluşturulmuş bir dizi Java dosyasını içerir. Proje, farklı API test senaryolarını kapsayan dosyalar ile API test süreçlerini anlamayı kolaylaştırmayı hedefler.
+**API Testing Practice** projesi, çeşitli HTTP istek türlerini ve JSON ile çalışma yöntemlerini öğrenmek ve uygulamak için oluşturulmuştur. Bu proje, farklı API test senaryolarını kapsayan Java dosyalarını içermektedir ve API test süreçlerini anlamayı kolaylaştırmayı hedefler.
 
-## Dosya İçeriği
+---
+
+## 📂 Proje Yapısı
 
 ### GET İstekleri
-
-- **C01_GetRequest_ResponseBodyYazdirma.java**: `GET` isteği gönderip yanıt gövdesini yazdırmayı öğrenmek için örnek bir test içerir.
-- **C02_GetRequest_ResposeBililerininManuelTestEdilmesi.java**: Yanıt bilgilerini manuel olarak test etmek için `GET` isteği örneği içerir.
-- **C03_Get_ResponseDegerleriniOtomasyonileTestEtme.java**: Yanıt değerlerinin otomasyon ile doğrulanmasını gösterir.
-- **C07_Get_ResponseBodyTesti.java**: `GET` isteğinin yanıt gövdesi üzerinde otomatik testler yapılır.
-- **C09_Get_BodyTekrarlardanKurtulma.java**: Yanıt gövdesini daha verimli ve tekrarsız bir şekilde test etmek için örnek içerir.
-- **C12_Get_ResponseBodyTestiListKullanimi.java**: Yanıt gövdesinde liste veri tiplerini kullanarak test yapmayı gösterir.
-- **C13_Get_ExpectedDataOlusturma.java**: Beklenen yanıt verilerini oluşturup test etmek için örnek içerir.
-- **C15_Get_SoftAssertIleExpectedDataTesti.java**: `Soft Assert` kullanarak `GET` yanıtının beklenen verilerle uyumunu test etmeyi gösterir.
+- **`C01_GetRequest_ResponseBodyYazdirma.java`**: GET isteği göndererek yanıt gövdesini yazdırma.
+- **`C02_GetRequest_ResposeBilgileriManuelTestEdilmesi.java`**: Yanıt bilgilerini manuel test etme.
+- **`C03_Get_ResponseDegerleriniOtomasyonileTestEtme.java`**: Yanıt değerlerini otomasyon ile doğrulama.
+- **`C07_Get_ResponseBodyTesti.java`**: Yanıt gövdesi üzerinde otomatik testler.
+- **`C13_Get_ExpectedDataOlusturma.java`**: Beklenen yanıt verilerini oluşturup test etme.
 
 ### POST İstekleri
-
-- **C08_Post_ResponseBodyTesti.java**: `POST` isteği ile gönderilen verilerin yanıt gövdesinde doğru olup olmadığını test eder.
-- **C11_Post_JsonPathIleBodyTesti.java**: `JsonPath` kullanarak `POST` isteğinde yanıt gövdesi test edilir.
-- **C14_Post_ExpectedDataVeJsonPathIleAssertion.java**: Beklenen veri ve `JsonPath` ile yanıt doğrulaması yapılır.
-- **C27_Post_TestDataKullanimi.java**: `Test Data Class` kullanarak `POST` isteğinde test verisi oluşturur.
-- **C32_POST_PojoClass.java**: `POST` istekleri için `Pojo Class` kullanarak veri gönderir ve doğrulama yapar.
+- **`C08_Post_ResponseBodyTesti.java`**: POST isteği ile gönderilen verilerin doğruluğunu test etme.
+- **`C14_Post_ExpectedDataVeJsonPathIleAssertion.java`**: Beklenen veri ve JsonPath ile doğrulama.
+- **`C27_Post_TestDataKullanimi.java`**: Test Data Class kullanarak POST testleri.
 
 ### PUT İstekleri
-
-- **C06_Put_RespnseBilgileriAssertion.java**: `PUT` isteği ile yanıt bilgilerini doğrulama işlemlerini içerir.
-- **C16_Put_SoftAssertIleExpectedDataTesti.java**: `Soft Assert` ile `PUT` isteği yanıtını doğrulama işlemleri yapılır.
-- **C25_Put_TestDataClassKullanimi.java**: `PUT` isteği için test verisi sınıfı kullanımı ile ilgili örnek içerir.
-- **C28_Put_DeSerializationMap.java**: Yanıtın `Map` kullanılarak deserialization ile doğrulanmasını gösterir.
-- **C31_Put_PojoClass.java**: `Pojo Class` kullanarak `PUT` isteklerinde veri güncellemeleri yapılır ve doğrulanır.
+- **`C06_Put_RespnseBilgileriAssertion.java`**: PUT isteği ile yanıt bilgilerini doğrulama.
+- **`C31_Put_PojoClass.java`**: Pojo Class kullanarak veri güncelleme ve doğrulama.
 
 ### JSON ve JSONPath Kullanımı
+- **`C04_JsonObjesiOlusturma.java`**: JSON objeleri oluşturma.
+- **`C10_JsonPathKullanimi.java`**: Yanıt gövdesinde belirli verileri bulma ve doğrulama.
 
-- **C04_JsonObjesiOlusturma.java** ve **C05_JsonObjesiOlusturma.java**: JSON objeleri oluşturarak istek gönderimi yapılır.
-- **C10_JsonPathKullanimi.java**: `JsonPath` ile yanıt gövdesinde belirli verilerin bulunması ve doğrulanması.
-- **C20_BaseUrlHeroKuapp2.java**: `Herokuapp` API taban URL kullanımıyla ilgili örnek içerir.
-- **C30_DeSerializationHerOkuApp.java**: `Herokuapp` API yanıtlarını deserialization ile nesneye dönüştürme işlemleri içerir.
+---
 
-### BaseURL ve Test Data Kullanımı
+## 🚀 Kurulum ve Kullanım
 
-- **C17_BaseUrlDummyRestapi.java**, **C19_BasUrlHerokuapp.java**, **C21_BaseUrlHerokuappQueryParam.java** ve **C22_BaseUrlHerokuappQueryParam.java**: `Base URL` yapılandırması ve sorgu parametreleriyle test yapma örnekleri.
-- **C23_Get_TestDataClassKullanimi.java**, **C24_Get_TestDataClassKullanimi.java**: `Test Data Class` kullanarak farklı GET isteklerinde veri sağlama ve doğrulama.
-  
-### Pojo ve Deserialization
+1. **Depoyu Klonlayın**
+   ```bash
+   git clone https://github.com/seflekL/API_Testing.git
+   cd API_Testing
+Maven Bağımlılıklarını Yükleyin
 
-- **C28_Put_DeSerializationMap.java**: `Map` kullanarak `PUT` isteği yanıtının deserialization işlemi.
-- **C31_Put_PojoClass.java** ve **C32_POST_PojoClass.java**: `Pojo Class` ile `PUT` ve `POST` isteklerinde veri işlemleri.
+bash
+Copy code
+mvn clean install
+Testleri Çalıştırın
 
-### Ekstra Dosya
+bash
+Copy code
+mvn test
+🛠️ Kullanılan Teknolojiler
+Java: Testlerin temel programlama dili.
+RestAssured: HTTP isteklerini göndermek ve yanıtları doğrulamak için.
+TestNG: Testleri organize etmek ve çalıştırmak için.
+Pojo: Veri yapıları için.
+JSON ve JsonPath: API yanıtlarını işlemek için.
+🌟 Özellikler
+Farklı HTTP istek türleri (GET, POST, PUT) ile test senaryoları.
+Pojo ve JSON kullanımı ile esnek veri işleme.
+Otomatik ve manuel test doğrulama örnekleri.
+🤝 Katkıda Bulunun
+Projeye katkıda bulunmak isterseniz:
 
-- **PojoSchema.png**: Pojo sınıfı yapısını ve JSON şemasını görsel olarak gösteren bir şema dosyasıdır.
+Depoyu fork'layın.
+Yeni bir dal oluşturun: git checkout -b yeni-ozellik.
+Değişikliklerinizi commit edin: git commit -m "Yeni özellik eklendi".
+Dalınızı push edin: git push origin yeni-ozellik.
+Bir Pull Request gönderin.
+📄 Lisans
+Bu proje, eğitim ve kişisel gelişim amacıyla hazırlanmıştır.
 
-## Kullanım
-
-1. Bu dosyaları kullanarak API testleri oluşturabilir, veri gönderme, güncelleme ve doğrulama işlemlerini deneyebilirsiniz.
-2. `RestAssured` kütüphanesi kullanılarak oluşturulmuş bu testler, çeşitli HTTP istek türleri ve doğrulama teknikleri üzerinde pratik yapmanızı sağlar.
-
-## Lisans
-
-Bu proje, öğrenim ve kişisel gelişim amacıyla hazırlanmıştır.
+🌟 Teşekkürler!
+Bu projeyi desteklediğiniz için teşekkür ederiz! 🎉
+Herhangi bir sorunuz varsa seflekL ile iletişime geçebilirsiniz. 🙌
