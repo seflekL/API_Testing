@@ -54,6 +54,7 @@ JSON ve JsonPath: API yanıtlarını işlemek için.
 Farklı HTTP istek türleri (GET, POST, PUT) ile test senaryoları.
 Pojo ve JSON kullanımı ile esnek veri işleme.
 Otomatik ve manuel test doğrulama örnekleri.
+
 🤝 Katkıda Bulunun
 Projeye katkıda bulunmak isterseniz:
 
@@ -62,6 +63,7 @@ Yeni bir dal oluşturun: git checkout -b yeni-ozellik.
 Değişikliklerinizi commit edin: git commit -m "Yeni özellik eklendi".
 Dalınızı push edin: git push origin yeni-ozellik.
 Bir Pull Request gönderin.
+
 📄 Lisans
 Bu proje, eğitim ve kişisel gelişim amacıyla hazırlanmıştır.
 
